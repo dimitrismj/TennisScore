@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="340.0" prefWidth="723.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TennisController">
+   <children>
+      <ImageView fitHeight="368.0" fitWidth="723.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/virtualtennis.jpg" />
+         </image>
+      </ImageView>
+      <Pane id="scorePane" layoutX="199.0" layoutY="1.0" prefHeight="72.0" prefWidth="334.0">
+         <children>
+            <Label fx:id="scoreType" alignment="CENTER" layoutX="93.0" prefHeight="26.0" prefWidth="141.0" text="Love-All" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="263.0" layoutY="19.0" prefHeight="5.0" prefWidth="65.0" text="Games" textFill="LIME">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="263.0" layoutY="38.0" prefHeight="5.0" prefWidth="65.0" text="Sets" textFill="LIME">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="name2" alignment="CENTER_RIGHT" layoutX="237.0" layoutY="-3.0" prefHeight="26.0" prefWidth="92.0" text="Opponent" textFill="YELLOW">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="score2" layoutX="179.0" layoutY="27.0" prefHeight="26.0" prefWidth="26.0" text="0" textFill="LIME">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="score1" layoutX="128.0" layoutY="27.0" prefHeight="26.0" prefWidth="26.0" text="0" textFill="LIME">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="4.0" layoutY="38.0" prefHeight="5.0" prefWidth="65.0" text="Sets" textFill="LIME">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="games1" layoutX="78.0" layoutY="18.0" prefHeight="26.0" prefWidth="26.0" text="0" textFill="LIME">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="sets1" layoutX="78.0" layoutY="39.0" prefHeight="26.0" prefWidth="26.0" text="0" textFill="LIME">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="games2" layoutX="236.0" layoutY="18.0" prefHeight="26.0" prefWidth="26.0" text="0" textFill="LIME">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="sets2" layoutX="236.0" layoutY="37.0" prefHeight="26.0" prefWidth="26.0" text="0" textFill="LIME">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="4.0" layoutY="17.0" prefHeight="5.0" prefWidth="65.0" text="Games" textFill="LIME">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="play" layoutX="595.0" layoutY="311.0" mnemonicParsing="false" onAction="#playSimulation" text="Play Simulation" />
+      <Label fx:id="name21" layoutX="204.0" layoutY="-3.0" prefHeight="26.0" prefWidth="79.0" text="Server" textFill="#0aafef">
+         <font>
+            <Font name="Arial Black" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
